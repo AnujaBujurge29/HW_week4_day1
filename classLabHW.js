@@ -90,3 +90,25 @@ timmy.exercise()
 timmy.exercise()
 console.log(timmy);
 console.log(gus);
+
+console.log("----------------------------------------Chef Make Dinners---------------------");
+class Dinner {
+    constructor(appetizer,enetrees, dessert){
+        this.appetizer = appetizer;
+        this.entrees = enetrees;
+        this.dessert =dessert;
+    }
+}
+
+class Chef extends Dinner{
+  dinnerMenu(){
+    console.log(`Today's menu for dineer is "${this.appetizer}" with "${this.entrees}" and "${this.dessert}" as dessert`);
+  }
+}
+
+let tuesdayDinner = new Chef("Vegetarian Charcuterie Board","BROCCOLI MANICOTTI WITH BURRATA"," Peanut Butter Brownies");
+let wedDinner = new Chef("Cheesy Pepper Jelly Wonton Cups","EGGPLANT LASAGNA","Hershey’s Chocolate Cake");
+let thursdayDinner = new Chef("Balsamic Bruschetta on Crostini","INDIAN FRIED RICE","Chocolate Peanut Butter Ice Cream");
+tuesdayDinner.dinnerMenu()
+wedDinner.dinnerMenu()
+thursdayDinner.dinnerMenu()
